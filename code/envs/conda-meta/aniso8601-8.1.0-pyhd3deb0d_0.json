@@ -1,0 +1,440 @@
+{
+  "build": "pyhd3deb0d_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python",
+    "python-dateutil"
+  ],
+  "extracted_package_dir": "/usr/local/Caskroom/miniconda/base/pkgs/aniso8601-8.1.0-pyhd3deb0d_0",
+  "features": "",
+  "files": [
+    "lib/python3.8/site-packages/aniso8601-8.1.0.dist-info/INSTALLER",
+    "lib/python3.8/site-packages/aniso8601-8.1.0.dist-info/LICENSE",
+    "lib/python3.8/site-packages/aniso8601-8.1.0.dist-info/METADATA",
+    "lib/python3.8/site-packages/aniso8601-8.1.0.dist-info/RECORD",
+    "lib/python3.8/site-packages/aniso8601-8.1.0.dist-info/REQUESTED",
+    "lib/python3.8/site-packages/aniso8601-8.1.0.dist-info/WHEEL",
+    "lib/python3.8/site-packages/aniso8601-8.1.0.dist-info/direct_url.json",
+    "lib/python3.8/site-packages/aniso8601-8.1.0.dist-info/top_level.txt",
+    "lib/python3.8/site-packages/aniso8601/__init__.py",
+    "lib/python3.8/site-packages/aniso8601/builders/__init__.py",
+    "lib/python3.8/site-packages/aniso8601/builders/python.py",
+    "lib/python3.8/site-packages/aniso8601/builders/tests/__init__.py",
+    "lib/python3.8/site-packages/aniso8601/builders/tests/test_init.py",
+    "lib/python3.8/site-packages/aniso8601/builders/tests/test_python.py",
+    "lib/python3.8/site-packages/aniso8601/compat.py",
+    "lib/python3.8/site-packages/aniso8601/date.py",
+    "lib/python3.8/site-packages/aniso8601/decimalfraction.py",
+    "lib/python3.8/site-packages/aniso8601/duration.py",
+    "lib/python3.8/site-packages/aniso8601/exceptions.py",
+    "lib/python3.8/site-packages/aniso8601/interval.py",
+    "lib/python3.8/site-packages/aniso8601/resolution.py",
+    "lib/python3.8/site-packages/aniso8601/tests/__init__.py",
+    "lib/python3.8/site-packages/aniso8601/tests/compat.py",
+    "lib/python3.8/site-packages/aniso8601/tests/test_date.py",
+    "lib/python3.8/site-packages/aniso8601/tests/test_decimalfraction.py",
+    "lib/python3.8/site-packages/aniso8601/tests/test_duration.py",
+    "lib/python3.8/site-packages/aniso8601/tests/test_init.py",
+    "lib/python3.8/site-packages/aniso8601/tests/test_interval.py",
+    "lib/python3.8/site-packages/aniso8601/tests/test_time.py",
+    "lib/python3.8/site-packages/aniso8601/tests/test_timezone.py",
+    "lib/python3.8/site-packages/aniso8601/tests/test_utcoffset.py",
+    "lib/python3.8/site-packages/aniso8601/time.py",
+    "lib/python3.8/site-packages/aniso8601/timezone.py",
+    "lib/python3.8/site-packages/aniso8601/utcoffset.py",
+    "lib/python3.8/site-packages/aniso8601/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/builders/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/builders/__pycache__/python.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/builders/tests/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/builders/tests/__pycache__/test_init.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/builders/tests/__pycache__/test_python.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/__pycache__/compat.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/__pycache__/date.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/__pycache__/decimalfraction.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/__pycache__/duration.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/__pycache__/exceptions.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/__pycache__/interval.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/__pycache__/resolution.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/tests/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/tests/__pycache__/compat.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/tests/__pycache__/test_date.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/tests/__pycache__/test_decimalfraction.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/tests/__pycache__/test_duration.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/tests/__pycache__/test_init.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/tests/__pycache__/test_interval.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/tests/__pycache__/test_time.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/tests/__pycache__/test_timezone.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/tests/__pycache__/test_utcoffset.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/__pycache__/time.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/__pycache__/timezone.cpython-38.pyc",
+    "lib/python3.8/site-packages/aniso8601/__pycache__/utcoffset.cpython-38.pyc"
+  ],
+  "fn": "aniso8601-8.1.0-pyhd3deb0d_0.tar.bz2",
+  "license": "BSD 3-Clause",
+  "link": {
+    "source": "/usr/local/Caskroom/miniconda/base/pkgs/aniso8601-8.1.0-pyhd3deb0d_0",
+    "type": 1
+  },
+  "md5": "a3c10144c4a6552f8f806bf51e7b86ff",
+  "name": "aniso8601",
+  "noarch": "python",
+  "package_tarball_full_path": "/usr/local/Caskroom/miniconda/base/pkgs/aniso8601-8.1.0-pyhd3deb0d_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/aniso8601-8.1.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/aniso8601-8.1.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "2198f6c729f5295f6c0fcf6003e5f159818dfaa33c8d0761084cab0724c6ffd6",
+        "sha256_in_prefix": "2198f6c729f5295f6c0fcf6003e5f159818dfaa33c8d0761084cab0724c6ffd6",
+        "size_in_bytes": 1501
+      },
+      {
+        "_path": "site-packages/aniso8601-8.1.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "8a226b6287bca8baedabdf701e3f863b56465e5d9f0a6e3cd33387be1cdd41b8",
+        "sha256_in_prefix": "8a226b6287bca8baedabdf701e3f863b56465e5d9f0a6e3cd33387be1cdd41b8",
+        "size_in_bytes": 17825
+      },
+      {
+        "_path": "site-packages/aniso8601-8.1.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "980b122e2c208f967e9d667b8c53853f5613b74cabf8bd6ebc1131773dd5059e",
+        "sha256_in_prefix": "980b122e2c208f967e9d667b8c53853f5613b74cabf8bd6ebc1131773dd5059e",
+        "size_in_bytes": 4330
+      },
+      {
+        "_path": "site-packages/aniso8601-8.1.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/aniso8601-8.1.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "67e9f2629c2b712ab17ddbb1e4c6e7fc3439db988fec9d831b72601af398c934",
+        "sha256_in_prefix": "67e9f2629c2b712ab17ddbb1e4c6e7fc3439db988fec9d831b72601af398c934",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "site-packages/aniso8601-8.1.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "b521cb823dacb47910c427f08efce91bb73901ff59bde091ec8c4b6c135fd487",
+        "sha256_in_prefix": "b521cb823dacb47910c427f08efce91bb73901ff59bde091ec8c4b6c135fd487",
+        "size_in_bytes": 105
+      },
+      {
+        "_path": "site-packages/aniso8601-8.1.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "3154289b27840fc9c6207ecf51074ccf180ba69201e3ca181ed7262f5ec44c1d",
+        "sha256_in_prefix": "3154289b27840fc9c6207ecf51074ccf180ba69201e3ca181ed7262f5ec44c1d",
+        "size_in_bytes": 10
+      },
+      {
+        "_path": "site-packages/aniso8601/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "d012c2fbfb04737c8d26ba3ac7091b71f73b505baa636cf12fc50976a8e4a568",
+        "sha256_in_prefix": "d012c2fbfb04737c8d26ba3ac7091b71f73b505baa636cf12fc50976a8e4a568",
+        "size_in_bytes": 527
+      },
+      {
+        "_path": "site-packages/aniso8601/builders/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "7aa377d6bd623e2756f6f3940ea4204ddc34350f0ba0a72ab9968a7ca6896bc8",
+        "sha256_in_prefix": "7aa377d6bd623e2756f6f3940ea4204ddc34350f0ba0a72ab9968a7ca6896bc8",
+        "size_in_bytes": 4355
+      },
+      {
+        "_path": "site-packages/aniso8601/builders/python.py",
+        "path_type": "hardlink",
+        "sha256": "cb1025513ea25015a7cc2e98eb7c926c7c5175a5e93889bd7bdf1d4e23ab7273",
+        "sha256_in_prefix": "cb1025513ea25015a7cc2e98eb7c926c7c5175a5e93889bd7bdf1d4e23ab7273",
+        "size_in_bytes": 17874
+      },
+      {
+        "_path": "site-packages/aniso8601/builders/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "7ab8fe4ce503eadb6a144a3946c10159a8d2482cd7ba93ceb73ddd3d7c82bb18",
+        "sha256_in_prefix": "7ab8fe4ce503eadb6a144a3946c10159a8d2482cd7ba93ceb73ddd3d7c82bb18",
+        "size_in_bytes": 209
+      },
+      {
+        "_path": "site-packages/aniso8601/builders/tests/test_init.py",
+        "path_type": "hardlink",
+        "sha256": "b4c7e444f6cfc1265e8f3deca5d3f7b4f8a546a910b750f290b9199092c083ef",
+        "sha256_in_prefix": "b4c7e444f6cfc1265e8f3deca5d3f7b4f8a546a910b750f290b9199092c083ef",
+        "size_in_bytes": 19811
+      },
+      {
+        "_path": "site-packages/aniso8601/builders/tests/test_python.py",
+        "path_type": "hardlink",
+        "sha256": "29f98c110471d05611773b0f46ded7ab4c5aeb98a5dbd7788943aacd42886c09",
+        "sha256_in_prefix": "29f98c110471d05611773b0f46ded7ab4c5aeb98a5dbd7788943aacd42886c09",
+        "size_in_bytes": 56546
+      },
+      {
+        "_path": "site-packages/aniso8601/compat.py",
+        "path_type": "hardlink",
+        "sha256": "82509ce2b95af06d83019e8d60b39a622b1a20b283351d1798bdf95848f2eb5a",
+        "sha256_in_prefix": "82509ce2b95af06d83019e8d60b39a622b1a20b283351d1798bdf95848f2eb5a",
+        "size_in_bytes": 305
+      },
+      {
+        "_path": "site-packages/aniso8601/date.py",
+        "path_type": "hardlink",
+        "sha256": "00dd9530ee2c2db37db12f64a56300bf89667d607f41058e4c221fab8c6e88c5",
+        "sha256_in_prefix": "00dd9530ee2c2db37db12f64a56300bf89667d607f41058e4c221fab8c6e88c5",
+        "size_in_bytes": 6926
+      },
+      {
+        "_path": "site-packages/aniso8601/decimalfraction.py",
+        "path_type": "hardlink",
+        "sha256": "60b8161773a2211d28983c3316260e96446ccf29230bf49be8d922af17297af2",
+        "sha256_in_prefix": "60b8161773a2211d28983c3316260e96446ccf29230bf49be8d922af17297af2",
+        "size_in_bytes": 470
+      },
+      {
+        "_path": "site-packages/aniso8601/duration.py",
+        "path_type": "hardlink",
+        "sha256": "3e7b3efbedfee0dcb8f37e6ed560e6f742f7ceef67290e3fced0f0d2812872a9",
+        "sha256_in_prefix": "3e7b3efbedfee0dcb8f37e6ed560e6f742f7ceef67290e3fced0f0d2812872a9",
+        "size_in_bytes": 10483
+      },
+      {
+        "_path": "site-packages/aniso8601/exceptions.py",
+        "path_type": "hardlink",
+        "sha256": "7edc920840c9cb1185245666706b72fcd94ad9ca34ac4c40314164f6be9548dd",
+        "sha256_in_prefix": "7edc920840c9cb1185245666706b72fcd94ad9ca34ac4c40314164f6be9548dd",
+        "size_in_bytes": 1182
+      },
+      {
+        "_path": "site-packages/aniso8601/interval.py",
+        "path_type": "hardlink",
+        "sha256": "17ec8a4f27c9a219f92607c005a4d9a1fbadfbf9d4dcebe9dc239192dfab6606",
+        "sha256_in_prefix": "17ec8a4f27c9a219f92607c005a4d9a1fbadfbf9d4dcebe9dc239192dfab6606",
+        "size_in_bytes": 7345
+      },
+      {
+        "_path": "site-packages/aniso8601/resolution.py",
+        "path_type": "hardlink",
+        "sha256": "98271570a07a20999e43f3d706b9d48db6081974fcd5ffa3a4d8a34db6b42135",
+        "sha256_in_prefix": "98271570a07a20999e43f3d706b9d48db6081974fcd5ffa3a4d8a34db6b42135",
+        "size_in_bytes": 422
+      },
+      {
+        "_path": "site-packages/aniso8601/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "7ab8fe4ce503eadb6a144a3946c10159a8d2482cd7ba93ceb73ddd3d7c82bb18",
+        "sha256_in_prefix": "7ab8fe4ce503eadb6a144a3946c10159a8d2482cd7ba93ceb73ddd3d7c82bb18",
+        "size_in_bytes": 209
+      },
+      {
+        "_path": "site-packages/aniso8601/tests/compat.py",
+        "path_type": "hardlink",
+        "sha256": "3a76d6baa77edcd8ebf4719f4084a6ece49f3ebfae2ada47b4a36533345a7a19",
+        "sha256_in_prefix": "3a76d6baa77edcd8ebf4719f4084a6ece49f3ebfae2ada47b4a36533345a7a19",
+        "size_in_bytes": 314
+      },
+      {
+        "_path": "site-packages/aniso8601/tests/test_date.py",
+        "path_type": "hardlink",
+        "sha256": "3737dc788106bcde33332a635a0a1ae04f5967b31b46dd5b3d6955d7eca121e7",
+        "sha256_in_prefix": "3737dc788106bcde33332a635a0a1ae04f5967b31b46dd5b3d6955d7eca121e7",
+        "size_in_bytes": 9665
+      },
+      {
+        "_path": "site-packages/aniso8601/tests/test_decimalfraction.py",
+        "path_type": "hardlink",
+        "sha256": "2634aba3005ffa98aa36faa671198d0d34716e6ef403a3cb9ddc4d0aae24be82",
+        "sha256_in_prefix": "2634aba3005ffa98aa36faa671198d0d34716e6ef403a3cb9ddc4d0aae24be82",
+        "size_in_bytes": 839
+      },
+      {
+        "_path": "site-packages/aniso8601/tests/test_duration.py",
+        "path_type": "hardlink",
+        "sha256": "9463aa94ee65d9946e2192801592597589918e4c688767c50f8ed75f9af60db1",
+        "sha256_in_prefix": "9463aa94ee65d9946e2192801592597589918e4c688767c50f8ed75f9af60db1",
+        "size_in_bytes": 25037
+      },
+      {
+        "_path": "site-packages/aniso8601/tests/test_init.py",
+        "path_type": "hardlink",
+        "sha256": "6a806adc6d4189b61f010f379154ca42042d2c21d0d4cda8a6374de7226db8d9",
+        "sha256_in_prefix": "6a806adc6d4189b61f010f379154ca42042d2c21d0d4cda8a6374de7226db8d9",
+        "size_in_bytes": 1198
+      },
+      {
+        "_path": "site-packages/aniso8601/tests/test_interval.py",
+        "path_type": "hardlink",
+        "sha256": "667980d943c97d4ac7216613cfb7b5a2f9ad68deced3a4ff7c558266b061744d",
+        "sha256_in_prefix": "667980d943c97d4ac7216613cfb7b5a2f9ad68deced3a4ff7c558266b061744d",
+        "size_in_bytes": 35291
+      },
+      {
+        "_path": "site-packages/aniso8601/tests/test_time.py",
+        "path_type": "hardlink",
+        "sha256": "0a9606ebb046adeb75c6911f918ac8cbc04da4b409578376f0064357e2f99fda",
+        "sha256_in_prefix": "0a9606ebb046adeb75c6911f918ac8cbc04da4b409578376f0064357e2f99fda",
+        "size_in_bytes": 24908
+      },
+      {
+        "_path": "site-packages/aniso8601/tests/test_timezone.py",
+        "path_type": "hardlink",
+        "sha256": "88da5aab08b5c3882ba8c6664d08805a3e2bb1cd4ddb3d4b49a6fb1299c3fcb9",
+        "sha256_in_prefix": "88da5aab08b5c3882ba8c6664d08805a3e2bb1cd4ddb3d4b49a6fb1299c3fcb9",
+        "size_in_bytes": 5629
+      },
+      {
+        "_path": "site-packages/aniso8601/tests/test_utcoffset.py",
+        "path_type": "hardlink",
+        "sha256": "9d0351b6dcae549c57bd03d1c3b8818efb0c658416582dc21366b820e80dcca7",
+        "sha256_in_prefix": "9d0351b6dcae549c57bd03d1c3b8818efb0c658416582dc21366b820e80dcca7",
+        "size_in_bytes": 1947
+      },
+      {
+        "_path": "site-packages/aniso8601/time.py",
+        "path_type": "hardlink",
+        "sha256": "4ae17d9d7f3c7527547ab6a767a8845970e09be74b805357b13d797e62c3cbd4",
+        "sha256_in_prefix": "4ae17d9d7f3c7527547ab6a767a8845970e09be74b805357b13d797e62c3cbd4",
+        "size_in_bytes": 5502
+      },
+      {
+        "_path": "site-packages/aniso8601/timezone.py",
+        "path_type": "hardlink",
+        "sha256": "24022d77378fb4e840f41a197320f617c555a085e4f68437721e262e7cab09f9",
+        "sha256_in_prefix": "24022d77378fb4e840f41a197320f617c555a085e4f68437721e262e7cab09f9",
+        "size_in_bytes": 2145
+      },
+      {
+        "_path": "site-packages/aniso8601/utcoffset.py",
+        "path_type": "hardlink",
+        "sha256": "fcd79af9b818f3b1768f18724229d8d09cfb2535e97ae46658234d55b45792d6",
+        "sha256_in_prefix": "fcd79af9b818f3b1768f18724229d8d09cfb2535e97ae46658234d55b45792d6",
+        "size_in_bytes": 2671
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/builders/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/builders/__pycache__/python.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/builders/tests/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/builders/tests/__pycache__/test_init.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/builders/tests/__pycache__/test_python.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/__pycache__/compat.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/__pycache__/date.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/__pycache__/decimalfraction.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/__pycache__/duration.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/__pycache__/exceptions.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/__pycache__/interval.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/__pycache__/resolution.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/tests/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/tests/__pycache__/compat.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/tests/__pycache__/test_date.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/tests/__pycache__/test_decimalfraction.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/tests/__pycache__/test_duration.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/tests/__pycache__/test_init.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/tests/__pycache__/test_interval.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/tests/__pycache__/test_time.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/tests/__pycache__/test_timezone.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/tests/__pycache__/test_utcoffset.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/__pycache__/time.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/__pycache__/timezone.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.8/site-packages/aniso8601/__pycache__/utcoffset.cpython-38.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "b206ad5a0d26dc66c2cd631d1b2a85220418720ab1cd4c41e8ea90dcdf2e966c",
+  "size": 33723,
+  "subdir": "noarch",
+  "timestamp": 1609311833380,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/aniso8601-8.1.0-pyhd3deb0d_0.tar.bz2",
+  "version": "8.1.0"
+}

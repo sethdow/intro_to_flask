@@ -1,0 +1,51 @@
+==> 2021-01-14 21:11:08 <==
+# cmd: /usr/local/Caskroom/miniconda/base/bin/conda create --prefix ./envs python=3.8 flask=1.1.2
+# conda version: 4.9.2
++defaults/noarch::click-7.1.2-py_0
++defaults/noarch::flask-1.1.2-py_0
++defaults/noarch::itsdangerous-1.1.0-py_0
++defaults/noarch::jinja2-2.11.2-py_0
++defaults/noarch::werkzeug-1.0.1-py_0
++defaults/noarch::wheel-0.36.2-pyhd3eb1b0_0
++defaults/osx-64::ca-certificates-2020.12.8-hecd8cb5_0
++defaults/osx-64::certifi-2020.12.5-py38hecd8cb5_0
++defaults/osx-64::libcxx-10.0.0-1
++defaults/osx-64::libedit-3.1.20191231-h1de35cc_1
++defaults/osx-64::libffi-3.3-hb1e8313_2
++defaults/osx-64::markupsafe-1.1.1-py38h1de35cc_1
++defaults/osx-64::ncurses-6.2-h0a44026_1
++defaults/osx-64::openssl-1.1.1i-h9ed2024_0
++defaults/osx-64::pip-20.3.3-py38hecd8cb5_0
++defaults/osx-64::python-3.8.5-h26836e1_1
++defaults/osx-64::readline-8.0-h1de35cc_0
++defaults/osx-64::setuptools-51.1.2-py38hecd8cb5_4
++defaults/osx-64::sqlite-3.33.0-hffcf06c_0
++defaults/osx-64::tk-8.6.10-hb0a8c7a_0
++defaults/osx-64::xz-5.2.5-h1de35cc_0
++defaults/osx-64::zlib-1.2.11-h1de35cc_3
+# update specs: ['flask=1.1.2', 'python=3.8']
+==> 2021-01-14 21:12:30 <==
+# cmd: /usr/local/Caskroom/miniconda/base/bin/conda install -c conda-forge flask-restful
+# conda version: 4.9.2
+-defaults/osx-64::ca-certificates-2020.12.8-hecd8cb5_0
+-defaults/osx-64::certifi-2020.12.5-py38hecd8cb5_0
+-defaults/osx-64::openssl-1.1.1i-h9ed2024_0
++conda-forge/noarch::aniso8601-8.1.0-pyhd3deb0d_0
++conda-forge/noarch::flask-restful-0.3.8-py_0
++conda-forge/noarch::python-dateutil-2.8.1-py_0
++conda-forge/noarch::pytz-2020.5-pyhd8ed1ab_0
++conda-forge/noarch::six-1.15.0-pyh9f0ad1d_0
++conda-forge/osx-64::ca-certificates-2020.12.5-h033912b_0
++conda-forge/osx-64::certifi-2020.12.5-py38h50d1736_1
++conda-forge/osx-64::openssl-1.1.1i-h35c211d_0
++conda-forge/osx-64::python_abi-3.8-1_cp38
+# update specs: ['flask-restful']
+==> 2021-01-17 13:58:43 <==
+# cmd: /usr/local/Caskroom/miniconda/base/bin/conda install -c conda-forge flask-jwt-extended
+# conda version: 4.9.2
++conda-forge/noarch::flask-jwt-extended-3.25.0-pyhd8ed1ab_0
++conda-forge/noarch::pycparser-2.20-pyh9f0ad1d_2
++conda-forge/noarch::pyjwt-1.7.1-py_0
++conda-forge/osx-64::cffi-1.14.4-py38h979bc6b_1
++conda-forge/osx-64::cryptography-3.3.1-py38h6b4ec92_1
+# update specs: ['flask-jwt-extended']

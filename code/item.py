@@ -1,5 +1,6 @@
-from flask_restful import Resource
-
+from flask_restful import Resource, reqparse
+from flask_jwt import jwt_required
+import sqlite3
 
 class Item(Resource):
     # this makes a parser for all routes within this resource
@@ -11,13 +12,22 @@ class Item(Resource):
         help="This field cannot be left blank"
     )
 
-
     @jwt_required()
     def get(self, name):
-        # filter returns an iterator, next finds the 1st,2nd, 3rd... item or raises a StopIteration error 
-        item = next(filter(lambda x: x['name']==name, items), None)
-        return {'item': item},200 if item else 404 # this sets the HTTP response code, defailt is 200
+        connection = sqlite3.connect('data.db')
+        cursor = connection.cursor()
         
+        item_query = "SELECT * FROM items where name = ?"
+        result = cursor.execute(item_query, (name,))
+        row = result.fetchone()
+        connection.close()
+
+        if result:
+            item = {'item':{'name':row[0],'price':row[1]}}
+            return item
+        
+        return {'message':'item did not exist'}, 404 # item not found
+
 
     def put(self, name):
         data = Item.parser.parse_args()

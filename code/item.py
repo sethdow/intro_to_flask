@@ -11,9 +11,8 @@ class Item(Resource):
         required=True,
         help="This field cannot be left blank"
     )
-
-    @jwt_required()
-    def get(self, name):
+    @classmethod
+    def retrieve(cls,name):
         connection = sqlite3.connect('data.db')
         cursor = connection.cursor()
         
@@ -21,47 +20,65 @@ class Item(Resource):
         result = cursor.execute(item_query, (name,))
         row = result.fetchone()
         connection.close()
+        return row
 
-        if result:
+
+    @jwt_required()
+    def get(self, name):
+        item = Item.retrieve(name)
+
+        if item:
             item = {'item':{'name':row[0],'price':row[1]}}
             return item
         
         return {'message':'item did not exist'}, 404 # item not found
 
-
-    def put(self, name):
-        data = Item.parser.parse_args()
-        item = next(filter(lambda x: x['name']==name, items),None)
-        #if it is a new item
-        if not item:
-            new_item = {
-                'name':name,
-                'price':data['price']
-            }
-            items.append(new_item)
-            return {'message':'item has been created'}
-        # if it already exists
-        else:
-            item.update()
-            return {'message':'item has been updated'}, 200
-        return {'message':'no item found'}, 400
-
     def post(self, name):
         # Check if it already exists
-       
+        item = Item.retrieve(name)
         
-        if next(filter(lambda x: x['name']==name, items), None):
-            return {'message':'Item already exists'}, 400
+        if item:
+            return {'message':'item already exists'}, 400
 
         
         data = Item.parser.parse_args()
         
-        new_item = {
-            "name":name,
-            "price":data["price"]
-        }
-        items.append(new_item)
-        return new_item, 201
+        connection = sqlite3.connect('data.db')
+        cursor = connection.cursor()
+        insert_query = "INSERT INTO items VALUES (?, ?)"
+        new_item = name, data['price']
+        cursor.execute(insert_query,new_item)
+        connection.commit()
+        connection.close()
+
+        return {'name':name, 'price':data['price']}, 201
+
+    def put(self, name):
+        # get the item
+        item = Item.retrieve(name)
+        # get data from the request
+        data = Item.parser.parse_args()
+        connection = sqlite3.connect('data.db')
+        cursor = connection.cursor()
+        
+        if not item:
+            insert_query = "INSERT INTO items VALUES (?, ?)"
+            new_item = name, data['price']
+            cursor.execute(insert_query,new_item)
+            connection.commit()
+            connection.close()
+
+            return {'name':name, 'price':data['price']}, 201
+        
+        update_query = "UPDATE items SET price = ? WHERE name = ?"
+        updated_item = data['price'], name
+        cursor.execute(update_query,updated_item)
+        connection.commit()
+        connection.close()
+        
+        return {'message':'item has been updated'}, 200
+
+
 
     def delete(self, name):
         global items # this tells the function that the thing being assigned isn't local

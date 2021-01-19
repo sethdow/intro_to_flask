@@ -53,7 +53,10 @@ class Item(Resource):
         if item:
             return {'message':'item already exists'}, 400
 
-        added_item = Item.add_item(name)
+        try:
+            added_item = Item.add_item(name)
+        except:
+            return {'message':'an error occurred when adding the item'}
 
         return added_item, 201
 
@@ -62,7 +65,10 @@ class Item(Resource):
         item = Item.retrieve(name)
         
         if not item:
+            try:
             added_item = Item.add_item(name)
+            except:
+                return {'message':'an error occurred when adding the item'}
             return added_item, 201
 
         data = Item.parser.parse_args()

@@ -56,7 +56,7 @@ class Item(Resource):
         try:
             added_item = Item.add_item(name)
         except:
-            return {'message':'an error occurred when adding the item'}
+            return {'message':'an error occurred when adding the item'}, 500
 
         return added_item, 201
 
@@ -68,7 +68,7 @@ class Item(Resource):
             try:
             added_item = Item.add_item(name)
             except:
-                return {'message':'an error occurred when adding the item'}
+                return {'message':'an error occurred when adding the item'}, 500
             return added_item, 201
 
         data = Item.parser.parse_args()

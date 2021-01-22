@@ -19,18 +19,11 @@ class UserRegister(Resource):
 
         # Check if username already exists
         data = parser.parse_args()
+        user = UserModel(data['username'],data['password'])
         
-        if UserModel.find_by_username(data['username']):
+        if UserModel.find_by_username(user.username):
             return {'message':'username already exists'}, 400
         
-        connection = sqlite3.connect('data.db')
-        cursor = connection.cursor()
-        
-        insert_query = "INSERT INTO users VALUES (null, ?,?)" #null for autoincrementing primary key
-        
-        cursor.execute(insert_query,(data['username'],data['password']))
-        
-        # Tear down
-        connection.commit()
-        connection.close()
+        else:
+            user.add_to_db()
         return {'message':'user has been created, get logging'}, 201

@@ -1,6 +1,8 @@
 from flask_restful import Resource, reqparse
 from flask_jwt import jwt_required
 from models.item import ItemModel
+from db import db
+
 import logging
 
 log = logging.getLogger('tester.sub')
@@ -36,7 +38,7 @@ class Item(Resource):
         item = ItemModel(name,data['price'])
 
         try:
-            item.add_item()
+            item.save_to_db()
         except Exception as e:
             log.warn('item {item.name} was not added to the database', e)
             return {'message':'The item was not able to be added to the database'}
@@ -46,35 +48,24 @@ class Item(Resource):
     def put(self, name):
         # check if it is a new item
         item = ItemModel.retrieve(name)
-        
+        data = Item.parser.parse_args()
+        # if no item add it
         if not item:
-            try:
-                item.add_item()
-            except:
-                return {'message':'the item was not able to be added to the db'}, 500
-            return item.json(), 201
+            item = ItemModel(name, data['price'])
+        # if there is an item update the price
         else:
-            data = Item.parser.parse_args()
-            updated_item = ItemModel(name,data['price'])
+            item.price = data['price']
+        try:
             
-            try:
-                updated_item.update()
-            except:
-                return {'message':'the item was not able to be added to the db'}, 500
-            
-        
-        return {'message':'item has been updated'}, 200
+            item.save_to_db()
+        except:
+            return {'message':'the item was not able to be added to the db'}, 500
+        return item.json(), 201
 
     def delete(self, name):
         item = ItemModel.retrieve(name)
-        if not item:
-            return {'message':'no item with that name exists'}
-        connection = sqlite3.connect('data.db')
-        cursor = connection.cursor()
-        delete_query = "DELETE FROM items WHERE name = ?"
-        cursor.execute(delete_query,(name,))
-        connection.commit()
-        connection.close()
+        if item:
+            item.delete_from_db()
         return {"message":'{} has been deleted'.format(name)}
 
 class Item_list(Resource):

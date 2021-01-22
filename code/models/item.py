@@ -1,9 +1,10 @@
 import sqlite3
 import logging
+from db import db
 
 log = logging.getLogger('modelLogger')
 
-class ItemModel:
+class ItemModel(db.Model):
     def __init__(self, name, price):
         self.name = name
         self.price = price 

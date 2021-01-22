@@ -2,8 +2,9 @@ from flask import Flask
 from flask_restful import Api
 from flask_jwt import JWT
 from security import authenticate, identity 
-from users import UserRegister
-from item import Item, Item_list
+from resources.user import UserRegister
+from resources.item import Item, Item_list
+
 
 app = Flask(__name__)
 app.secret_key = 'seth'
@@ -22,3 +23,5 @@ api.add_resource(UserRegister, '/register')
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
+    logging.basicConfig(filename='error.log',level=logging.DEBUG)
+    

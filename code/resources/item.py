@@ -18,6 +18,11 @@ class Item(Resource):
         required=True,
         help="This field cannot be left blank"
     )
+    parser.add_argument('store_id',
+        type=int,
+        required=True,
+        help="This field cannot be left blank"
+    )
     
     @jwt_required()
     def get(self, name):
@@ -35,7 +40,7 @@ class Item(Resource):
         # Check if it already exists
         data = Item.parser.parse_args()
         
-        item = ItemModel(name,data['price'])
+        item = ItemModel(name,**data)
 
         try:
             item.save_to_db()
@@ -51,12 +56,12 @@ class Item(Resource):
         data = Item.parser.parse_args()
         # if no item add it
         if not item:
-            item = ItemModel(name, data['price'])
+            item = ItemModel(name, **data)
         # if there is an item update the price
         else:
             item.price = data['price']
+            item.store_id = data['store_id']
         try:
-            
             item.save_to_db()
         except:
             return {'message':'the item was not able to be added to the db'}, 500

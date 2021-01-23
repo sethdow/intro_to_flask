@@ -4,6 +4,7 @@ from flask_jwt import JWT
 from security import authenticate, identity 
 from resources.user import UserRegister
 from resources.item import Item, Item_list
+from resources.store import Store, StoreList 
 
 
 
@@ -23,12 +24,12 @@ def create_tables():
 # id from the token 
 jwt = JWT(app, authenticate, identity)
 
-
-
-
 api.add_resource(Item, '/item/<string:name>')
 api.add_resource(Item_list, '/items')
+api.add_resource(Store, '/store/<string:name>')
+api.add_resource(StoreList,'/stores')
 api.add_resource(UserRegister, '/register')
+
 
 if __name__ == '__main__':
     from db import db

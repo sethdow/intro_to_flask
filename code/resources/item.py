@@ -7,7 +7,6 @@ import logging
 
 log = logging.getLogger('tester.sub')
 
-import sqlite3
 
 class Item(Resource):
     # this makes a parser for all routes within this resource

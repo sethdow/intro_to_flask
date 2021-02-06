@@ -1,6 +1,5 @@
 from models.user import UserModel
 from werkzeug.security import safe_str_cmp
-import sqlite3
 
 
 def authenticate(username, password):

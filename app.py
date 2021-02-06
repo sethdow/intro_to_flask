@@ -12,6 +12,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 app.secret_key = 'seth'
 api = Api(app)
+db.init_app(app)
 
 @app.before_first_request
 def create_tables():
@@ -28,6 +29,7 @@ api.add_resource(Item_list, '/items')
 api.add_resource(Store, '/store/<string:name>')
 api.add_resource(StoreList,'/stores')
 api.add_resource(UserRegister, '/register')
+
 
 
 if __name__ == '__main__':
